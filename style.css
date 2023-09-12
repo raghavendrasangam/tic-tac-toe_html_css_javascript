@@ -29,6 +29,46 @@ body{
     background: var(--bg-green);
 }
 
+h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1:hover, h2:hover {
+    cursor: default;
+}
+
+/* INFO */
+#info{
+    text-align: center;
+    width: 15rem;
+    color: var(--text-gold);
+}
+
+#info__title {
+    font-size: 2rem;
+
+}
+
+.info__player {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: var(--border);
+    color: var(--dark);
+    background: var(--bg-white);
+}
+
+.info__player__icon{
+    height: 1.3rem;
+    padding-top: 0.13rem;
+
+}
+
+
+/* GRID */
 #grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,12 +77,16 @@ body{
     grid-gap: 0.4rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
-    background: rgb(226, 226, 221);
+    background: var(--bg-brown);
     
 }
 
 .grid__square{
-    background: var(--bg-brown);
+    background: var(--bg-white);
     border-radius: 0.3rem;
     border: var(--border);
+}
+
+.grid__square:hover{
+    cursor: pointer;
 }
