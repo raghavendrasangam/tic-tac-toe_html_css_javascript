@@ -67,7 +67,17 @@ h1:hover, h2:hover {
 
 }
 
+.cross{
+    background-image: url(assets/cross.png);
+}
 
+.circle{
+    background-image: url(assets/circle.png);
+}
+
+.cross, .circle {
+    background-size: cover;
+}
 /* GRID */
 #grid{
     display: grid;
@@ -89,4 +99,108 @@ h1:hover, h2:hover {
 
 .grid__square:hover{
     cursor: pointer;
+}
+
+/* INSTRUCTIONS */
+
+#instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+}
+
+#instructions__text {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-white);
+}
+
+#instructions__btn{
+    cursor: pointer;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+    background: var(--dark);
+    border: var(--border);
+    color: var(--text-white);
+}
+
+#instructions__btn:active{
+    transform: translateY(0.125rem);  
+}
+
+/* MODAL */
+#modal {
+    display: none;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg-modal);
+
+}
+
+#modal__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    width: 40%;
+    border-radius: 1.5rem;
+    color: var(--text-white);
+    background: var(--bg-red);
+    border: var(--dark) solid 0.1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label{
+    display: none;
+}
+
+input{
+    margin: 1.2rem;
+    font-size: 1rem;
+    border-radius: 1.25rem;
+    padding: 0.625rem 1.25rem;
+}
+::placeholder {
+    font-size: italic;
+}
+
+input[type=submit]:active{
+    transform: translateY(0.125rem);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1100px) {
+
+    #grid{
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    #info__title {
+        margin: 0 0 1rem;
+    }
+    body{
+        align-items: center;
+    }
+    #modal__content {
+        text-align: center;
+        height: 60%;
+        width: 80%;
+    }
+    input{
+        width: 10rem;
+    }
 }
