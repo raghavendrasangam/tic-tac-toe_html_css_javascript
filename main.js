@@ -145,7 +145,7 @@ function continueGame() {
     removeSquareClick();
     setTimeout(() => {
         reset();
-    }, 4000);
+    }, 3000);
 }
 
 function restartGame(){
