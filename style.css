@@ -5,7 +5,9 @@
 
 :root{
     --bg-green: linear-gradient( 90deg, rgba(4, 57, 46, 1) 0%, rgba(0, 153, 102, 1) 100% );
-    --bg-red: linear-gradient( 90deg, rgb(39, 0, 0) 0%, rgb(149, 0, 0) 100%);
+
+    --bg-red:   linear-gradient(319deg, #118ab2 0%, #06d6a0 37%, #ffd166 100%);
+    
     --bg-brown: linear-gradient( 90deg, rgba(99, 61, 0, 1) 0%, rgba(149, 93, 0, 1) 100% );
     --bg-white: white;
     --bg-modal: #0e110eaf;
@@ -92,7 +94,7 @@ h1:hover, h2:hover {
 }
 
 .grid__square{
-    background: var(--bg-white);
+    background-color: var(--bg-white);
     border-radius: 0.3rem;
     border: var(--border);
 }
@@ -150,7 +152,7 @@ h1:hover, h2:hover {
     align-items: center;
     height: 65%;
     width: 40%;
-    border-radius: 1.5rem;
+    border-radius: 0.98rem;
     color: var(--text-white);
     background: var(--bg-red);
     border: var(--dark) solid 0.1rem;
