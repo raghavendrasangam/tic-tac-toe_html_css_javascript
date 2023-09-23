@@ -6,7 +6,7 @@
 :root{
     --bg-green: linear-gradient( 90deg, rgba(4, 57, 46, 1) 0%, rgba(0, 153, 102, 1) 100% );
 
-    --bg-red:   linear-gradient(319deg, #118ab2 0%, #06d6a0 37%, #66ff73da 100%);
+    --bg-red:   linear-gradient(319deg, #118ab2c0 0%, #06d69eb0 30%, #66ff73c4 90%);
     
     --bg-brown: linear-gradient( 90deg, rgba(99, 61, 0, 1) 0%, rgba(149, 93, 0, 1) 100% );
     --bg-white: white;
