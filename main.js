@@ -111,6 +111,7 @@ function incrementMove(){
     function playerWon(){
         infoText.innerHTML = `${pastPlayer} WON!`;
         playerHasWon = true;
+        confetti.start();
         continueGame(); 
     }
 
@@ -144,6 +145,7 @@ function checkForTie() {
 function continueGame() {
     removeSquareClick();
     setTimeout(() => {
+        confetti.stop();
         reset();
     }, 3000);
 }
