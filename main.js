@@ -147,7 +147,7 @@ function continueGame() {
     setTimeout(() => {
         confetti.stop();
         reset();
-    }, 2000);
+    }, 2200);
 }
 
 function restartGame(){
