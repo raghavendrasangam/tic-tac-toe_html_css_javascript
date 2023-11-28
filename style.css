@@ -4,12 +4,12 @@
 
 
 :root{
-    --bg-green: linear-gradient( 90deg, rgba(4, 57, 46, 1) 0%, rgba(0, 153, 102, 1) 100% );
+    --bg-green:linear-gradient(to right, #000000, #434343);
 
-    --bg-red:   linear-gradient(319deg, #118ab2c0 0%, #06d69eb0 30%, #66ff73c4 90%);
+    --bg-red:   linear-gradient(to right, #000000d8, #434343d7);
     
     --bg-brown: linear-gradient( 90deg, rgba(99, 61, 0, 1) 0%, rgba(149, 93, 0, 1) 100% );
-    --bg-white: white;
+    --bg-white: rgba(202, 202, 202, 0.822);
     --bg-modal: #0e110eaf;
     --text-white: white;
     --text-dark: rgb(54, 54, 54);
@@ -174,8 +174,10 @@ input{
     font-size: 1rem;
     border-radius: 1.25rem;
     padding: 0.625rem 1.25rem;
+    background-color: #9e9c9ca8;
 }
 ::placeholder {
+    color: aliceblue;
     font-size: italic;
 }
 
